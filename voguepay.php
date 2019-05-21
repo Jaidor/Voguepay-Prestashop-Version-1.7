@@ -364,7 +364,7 @@ class VoguePay extends PaymentModule
                         'label' => $this->trans('Demo Mode', array(), 'Modules.Voguepay.Admin'),
                         'name' => 'VOGUEPAY_DEMO_MODE',
                         'is_bool' => true,
-                        'desc' => $this->trans('The merchant ID field is not required if Demo Mode is set to Yes.', array(), 'Modules.Voguepay.Admin'),
+                        'desc' => $this->trans('The Merchant ID field is not required if Demo Mode is set to Yes.', array(), 'Modules.Voguepay.Admin'),
 
                         'values' => array(
 
@@ -399,7 +399,7 @@ class VoguePay extends PaymentModule
                         'type' => 'text',
                         'label' => $this->trans('Store ID', array(), 'Modules.Voguepay.Admin'),
                         'name' => 'VOGUEPAY_STORE_ID',
-                        'desc' => $this->trans('Your Merchant ID from your voguepay account (Optional.)', array(), 'Modules.Voguepay.Admin'),
+                        'desc' => $this->trans('Your Store ID from your Voguepay account (Optional.)', array(), 'Modules.Voguepay.Admin'),
                     ),
 
                     array(
