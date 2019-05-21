@@ -364,7 +364,7 @@ class VoguePay extends PaymentModule
                         'label' => $this->trans('Demo Mode', array(), 'Modules.Voguepay.Admin'),
                         'name' => 'VOGUEPAY_DEMO_MODE',
                         'is_bool' => true,
-                        'desc' => $this->trans('If you choose Yes is on Demo Payment, if you choose No Voguepay merchant ID would be entered below for Live payment .', array(), 'Modules.Voguepay.Admin'),
+                        'desc' => $this->trans('The merchant ID field is not required if Demo Mode is set to Yes.', array(), 'Modules.Voguepay.Admin'),
 
                         'values' => array(
 
@@ -453,7 +453,7 @@ class VoguePay extends PaymentModule
                         'label' => $this->trans('Payment Method', array(), 'Modules.Voguepay.Admin'),
                         'name' => 'VOGUEPAY_PAYMENT_METHOD',
                         'is_bool' => true,
-                        'desc' => $this->trans('If you choose Yes it will redirect to voguepay, if you choose No it will be inline payment without redirection.', array(), 'Modules.Voguepay.Admin'),
+                        'desc' => $this->trans('Select Yes, for users to be redirected to VoguePay Checkout page or No, for users to complete payment on your Checkout page.', array(), 'Modules.Voguepay.Admin'),
 
                         'values' => array(
 
