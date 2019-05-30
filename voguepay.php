@@ -261,7 +261,7 @@ class VoguePay extends PaymentModule
             
 
         $newOption = new PaymentOption();
-        $newOption->setCallToActionText($this->trans('Voguepay (Debit/credit cards)', array(), 'Modules.Voguepay.Shop'))
+        $newOption->setCallToActionText($this->trans('Voguepay (Debit/Credit Cards)', array(), 'Modules.Voguepay.Shop'))
             ->setAction($this->context->link->getModuleLink($this->name, 'validation', array(), true))
             ->setAdditionalInformation($this->context->smarty->fetch('module:voguepay/views/templates/hook/intro.tpl'))
             ->setLogo(Media::getMediaPath(_PS_MODULE_DIR_.$this->name.'/voguepay-logo.jpg'));
