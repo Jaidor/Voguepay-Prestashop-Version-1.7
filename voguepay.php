@@ -224,7 +224,7 @@ class VoguePay extends PaymentModule
             $this->data['merchant_id'] = $merchant_id;
             $this->data['store_id'] = Configuration::get('VOGUEPAY_STORE_ID');
             $this->data['cur'] = Configuration::get('VOGUEPAY_CURRENCY');
-            $this->data['developer_code'] = '5c06818ac2d89';
+            $this->data['developer_code'] = '5cff5a837296d';
             $this->data['return_url'] = $this->context->link->getPageLink('order-confirmation', null, null, 'key=' . $cart->secure_key . '&id_cart=' . (int) ($cart->id) . '&id_module=' . (int) ($this->id));
             $this->data['notify_url'] = $this->context->link->getModuleLink('voguepay', 'voguepaysuccess', array(), true);
             $this->responseurl = $this->context->link->getModuleLink('voguepay', 'voguepaysuccess', array(), true);
